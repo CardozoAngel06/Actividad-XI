@@ -1,6 +1,6 @@
-fetch('../data/datos.json')
+fetch('./data/datos.json')
   .then(respuesta => respuesta.json())
-  .then(datos => mostrarProductos(datos.productos));
+  .then(datos => mostrarProductos(datos));
 
 const mostrarProductos = (datos) => {
   let productos = "";
