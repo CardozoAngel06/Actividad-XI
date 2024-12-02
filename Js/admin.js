@@ -1,7 +1,7 @@
 // Fetch de productos
-fetch('../data/datos.json')
+fetch('./data/datos.json')
   .then((respuesta) => respuesta.json())
-  .then((datos) => mostrarProductos(datos.productos));
+  .then((datos) => mostrarProductos(datos));
 
 // Mostrar productos
 const mostrarProductos = (datos) => {
